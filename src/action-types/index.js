@@ -1,0 +1,11 @@
+export const GET_MOVIES = 'GET_MOVIES';
+export const GET_MOVIES_ERROR = 'GET_MOVIES_ERROR';
+export const LOADING_MOVIES_START = 'LOADING_MOVIE_START';
+export const LOADING_MOVIES_END = 'LOADING_MOVIE_END';
+
+export const GET_GENRES = 'GET_GENRES';
+
+export const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
+
+export const SEARCH_MOVIE = 'SEARCH_MOVIE';
+

@@ -1,0 +1,9 @@
+.movies-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  .selected {
+    font-weight: bold;
+  }
+}
