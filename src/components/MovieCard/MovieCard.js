@@ -12,7 +12,7 @@ export const MovieCard = (props) => {
 };
 
   return (
-    <div className={`${CN} d-flex flex-column`} onClick={onSelectHandler}>
+    <div className={`${CN} d-flex col-6 col-sm-3 flex-column`} onClick={onSelectHandler}>
       <div className='img-poster'>
         <PosterImg src={poster_path}/>
       </div>

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import {MoviesPage} from "../../containers/MoviesPage";
 import {MovieDetailsPage} from "../../containers/MovieDetailsPage";
+import {Header} from "../Header/Header";
 
 
 
@@ -17,6 +18,7 @@ import {MovieDetailsPage} from "../../containers/MovieDetailsPage";
   return(
     <Provider store={store}>
       <Router>
+          <Header/>
         <Switch>
           <Route exact path='/'>
             <Redirect to='/movies'/>

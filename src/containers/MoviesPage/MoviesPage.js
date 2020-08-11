@@ -3,8 +3,8 @@ import {apiKey} from "../../constants";
 import queryString from "querystring";
 import {MoviesList} from "../../components/MoviesList/MoviesList";
 import Paginator from "../../components/Paginator/Paginator";
-import './MoviesPage.scss'
 import {SearchForm} from "../../components/SearchForm/SearchForm";
+import './MoviesPage.scss'
 
 const CN = 'movies-page';
 
@@ -53,11 +53,11 @@ export class MoviesPage extends Component {
 
         {!isLoading && !!moviesList.length && !!genresList.length
         && <Fragment>
-          <Paginator pageNum={pageNum} onPageChange={this.onPageChange} totalResults={totalResults} pageSize={pageSize}/>
           <MoviesList
             options={{moviesList, genresList}}
             onSelect={this.onSelectMovie}
           />
+          <Paginator pageNum={pageNum} onPageChange={this.onPageChange} totalResults={totalResults} pageSize={pageSize}/>
         </Fragment>
         }
       </div>
